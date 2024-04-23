@@ -1,5 +1,5 @@
+import type { Heading } from '@magmaorg/nextra'
 import cn from 'clsx'
-import type { Heading } from 'nextra'
 import type { ReactElement } from 'react'
 import { useEffect, useMemo, useRef } from 'react'
 import scrollIntoView from 'scroll-into-view-if-needed'

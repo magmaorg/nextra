@@ -1,6 +1,6 @@
+import type { FrontMatter, PageMapItem, PageOpts } from '@magmaorg/nextra'
+import { metaSchema } from '@magmaorg/nextra/normalize-pages'
 import { ThemeProvider } from 'next-themes'
-import type { FrontMatter, PageMapItem, PageOpts } from 'nextra'
-import { metaSchema } from 'nextra/normalize-pages'
 import type { ReactElement, ReactNode } from 'react'
 import { createContext, useContext, useState } from 'react'
 import type { ZodError } from 'zod'

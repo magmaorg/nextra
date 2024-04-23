@@ -1,14 +1,14 @@
+import type { NextraThemeLayoutProps, PageOpts } from '@magmaorg/nextra'
 import { useRouter } from 'next/router'
-import type { NextraThemeLayoutProps, PageOpts } from 'nextra'
 import type { ReactElement, ReactNode } from 'react'
 import { useMemo } from 'react'
 import 'focus-visible'
+import { useFSRoute, useMounted } from '@magmaorg/nextra/hooks'
+import { MDXProvider } from '@magmaorg/nextra/mdx'
 import cn from 'clsx'
-import { useFSRoute, useMounted } from 'nextra/hooks'
-import { MDXProvider } from 'nextra/mdx'
 import './polyfill'
-import type { PageTheme } from 'nextra/normalize-pages'
-import { normalizePages } from 'nextra/normalize-pages'
+import type { PageTheme } from '@magmaorg/nextra/normalize-pages'
+import { normalizePages } from '@magmaorg/nextra/normalize-pages'
 import {
   Banner,
   Breadcrumb,
@@ -252,7 +252,7 @@ export default function Layout({
 }
 
 export { useConfig, PartialDocsThemeConfig as DocsThemeConfig }
-export { useMDXComponents } from 'nextra/mdx'
+export { useMDXComponents } from '@magmaorg/nextra/mdx'
 export {
   Callout,
   Steps,
@@ -261,7 +261,7 @@ export {
   Cards,
   Card,
   FileTree
-} from 'nextra/components'
+} from '@magmaorg/nextra/components'
 export { useTheme } from 'next-themes'
 export { Link } from './mdx-components'
 export {

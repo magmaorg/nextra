@@ -1,6 +1,6 @@
+import { ArrowRightIcon } from '@magmaorg/nextra/icons'
+import type { Item } from '@magmaorg/nextra/normalize-pages'
 import cn from 'clsx'
-import { ArrowRightIcon } from 'nextra/icons'
-import type { Item } from 'nextra/normalize-pages'
 import type { ReactElement } from 'react'
 import { useConfig } from '../contexts'
 import type { DocsThemeConfig } from '../index'

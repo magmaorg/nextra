@@ -1,6 +1,6 @@
+import { useMounted } from '@magmaorg/nextra/hooks'
+import { MoonIcon, SunIcon } from '@magmaorg/nextra/icons'
 import { useTheme } from 'next-themes'
-import { useMounted } from 'nextra/hooks'
-import { MoonIcon, SunIcon } from 'nextra/icons'
 import type { ReactElement } from 'react'
 import { z } from 'zod'
 import { useConfig } from '../contexts'

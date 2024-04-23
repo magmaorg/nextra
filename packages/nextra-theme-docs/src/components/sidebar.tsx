@@ -1,9 +1,9 @@
+import type { Heading } from '@magmaorg/nextra'
+import { useFSRoute, useMounted } from '@magmaorg/nextra/hooks'
+import { ArrowRightIcon, ExpandIcon } from '@magmaorg/nextra/icons'
+import type { Item, MenuItem, PageItem } from '@magmaorg/nextra/normalize-pages'
 import cn from 'clsx'
 import { useRouter } from 'next/router'
-import type { Heading } from 'nextra'
-import { useFSRoute, useMounted } from 'nextra/hooks'
-import { ArrowRightIcon, ExpandIcon } from 'nextra/icons'
-import type { Item, MenuItem, PageItem } from 'nextra/normalize-pages'
 import type { ReactElement } from 'react'
 import {
   createContext,

@@ -1,12 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import 'nextra/styles/variables.css';
-@import 'nextra/styles/code-block.css';
-@import 'nextra/styles/subheading-anchor.css';
-@import 'nextra/styles/scrollbar.css';
-@import 'nextra/styles/steps.css';
-@import 'nextra/styles/cards.css';
+@import '@magmaorg/nextra/styles/variables.css';
+@import '@magmaorg/nextra/styles/code-block.css';
+@import '@magmaorg/nextra/styles/subheading-anchor.css';
+@import '@magmaorg/nextra/styles/scrollbar.css';
+@import '@magmaorg/nextra/styles/steps.css';
+@import '@magmaorg/nextra/styles/cards.css';
 @import './hamburger.css';
 @import './typesetting-article.css';
 

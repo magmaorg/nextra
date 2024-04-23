@@ -56,7 +56,7 @@ module.exports = {
     },
     // Rules for React files
     {
-      files: '{packages,examples,docs}/**',
+      files: '{packages}/**',
       extends: [
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
@@ -103,11 +103,7 @@ module.exports = {
         // 'plugin:@typescript-eslint/recommended-requiring-type-checking'
       ],
       parserOptions: {
-        project: [
-          'packages/*/tsconfig.json',
-          'docs/tsconfig.json',
-          'tsconfig.eslint.json'
-        ]
+        project: ['packages/*/tsconfig.json', 'tsconfig.eslint.json']
       },
       rules: {
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
@@ -144,17 +140,6 @@ module.exports = {
         ]
       }
     },
-    // ⚙️ nextra-theme-blog
-    {
-      ...TAILWIND_CONFIG,
-      files: 'packages/nextra-theme-blog/**',
-      settings: {
-        tailwindcss: {
-          config: 'packages/nextra-theme-blog/tailwind.config.js',
-          whitelist: ['subheading-', 'post-item', 'post-item-more']
-        }
-      }
-    },
     // ⚙️ nextra
     {
       ...TAILWIND_CONFIG,
@@ -165,44 +150,6 @@ module.exports = {
           callees: ['cn'],
           whitelist: ['nextra-code-block', 'nextra-filetree']
         }
-      }
-    },
-    // ⚙️ Docs
-    {
-      ...TAILWIND_CONFIG,
-      files: 'docs/**',
-      settings: {
-        tailwindcss: {
-          config: 'docs/tailwind.config.js',
-          callees: ['cn'],
-          whitelist: ['dash-ring', 'theme-1', 'theme-2', 'theme-3', 'theme-4']
-        },
-        next: { rootDir: 'docs' }
-      }
-    },
-    // ⚙️ SWR-site example
-    {
-      ...TAILWIND_CONFIG,
-      files: 'examples/swr-site/**',
-      settings: {
-        tailwindcss: {
-          config: 'examples/swr-site/tailwind.config.js'
-        },
-        next: { rootDir: 'examples/swr-site' }
-      }
-    },
-    // ⚙️ blog example
-    {
-      files: 'examples/blog/**',
-      settings: {
-        next: { rootDir: 'examples/blog' }
-      }
-    },
-    // ⚙️ docs example
-    {
-      files: 'examples/docs/**',
-      settings: {
-        next: { rootDir: 'examples/docs' }
       }
     },
     {
@@ -218,7 +165,7 @@ module.exports = {
       }
     },
     {
-      files: 'packages/{nextra,nextra-theme-docs,nextra-theme-blog}/**',
+      files: 'packages/{nextra,nextra-theme-docs}/**',
       rules: {
         // disable rule because we don't have pagesDir in above folders
         '@next/next/no-html-link-for-pages': 'off'
