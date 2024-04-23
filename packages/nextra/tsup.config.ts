@@ -65,13 +65,13 @@ const sharedConfig = {
 
 export default defineConfig([
   {
-    name: 'nextra',
+    name: '@magmaorg/nextra',
     entry: ['src/index.js', 'src/__temp__.js', 'src/catch-all.ts'],
     format: 'cjs',
     dts: false
   },
   {
-    name: 'nextra-esm',
+    name: '@magmaorg/nextra-esm',
     entry: [
       'src/**/*.ts',
       '!src/**/*.d.ts',
@@ -81,14 +81,14 @@ export default defineConfig([
     ...sharedConfig
   },
   {
-    name: 'nextra-client',
+    name: '@magmaorg/nextra-client',
     entry: CLIENT_ENTRY,
     outExtension: () => ({ js: '.js' }),
     ...sharedConfig
   },
   {
     entry: ['src/types.ts'],
-    name: 'nextra-types',
+    name: '@magmaorg/nextra-types',
     dts: { only: true }
   }
 ])
