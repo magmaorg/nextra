@@ -186,7 +186,7 @@ async function loader(
     codeHighlight,
     route: pageNextRoute,
     locale,
-    filePath: mdxPath.replace(/\/index$/, ''),
+    filePath: mdxPath,
     useCachedCompiler: true,
     isPageImport
   })
