@@ -32,7 +32,7 @@ interface BodyProps {
 
 const classes = {
   toc: cn(
-    'nextra-toc nx-order-last nx-hidden nx-w-64 nx-shrink-0 xl:nx-block print:nx-hidden'
+    'nextra-toc nx-order-last nx-hidden nx-w-72 nx-shrink-0 xl:nx-block print:nx-hidden'
   ),
   main: cn('nx-w-full nx-break-words')
 }
